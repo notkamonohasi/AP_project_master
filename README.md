@@ -4,3 +4,6 @@
 ## 説明
 python app.py → 文字認識のみ<br>
 python ui.py → UI機能付き<br>
+
+## 実行環境
+env.ymlに記述した<br>
