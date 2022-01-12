@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>UI test</title>
+    <!--
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    -->
+</head>
+<body>
+    <h1>{{title}}</h1>
+    <p>{{message}}</p>
+    <div>
+        
+        <form action="/" method="POST" enctype="multipart/form-data">        
+        <script type="text/javascript">
+        for(let i=0;i<=9;i++){
+            document.write(
+                        "<p>"+String(i)+":",
+                        "<select name='"+String(i)+":'>",
+                        "<option value='youtube'>Youtube</option>",
+                        "<option value='google'>Google</option>",
+                        "<option value='f11'>デスクトップ</option>",
+                        "<option value='spotlight'>spotlight検索</option>",
+                        "<option value='nextDesktop'>次の画面</option>",
+                        "<option value='prevDesktop'>前の画面</option>",
+                        "<option value='screenshot'>スクリーンショット</option>",
+                        "<option value='mouseup'>マウス上</option>",
+                        "<option value='mousedown'>マウス下</option>",
+                        "<option value='mouseright'>マウス右</option>",
+                        "<option value='mouseleft'>マウス左</option>",
+                        "<option value='mouseclick'>マウスクリック</option>",
+                        "<option value='finish'>終了</option>",
+                        "</select>",
+                        "</p>"
+                        )
+        }
+        </script>
+        <input type="submit" value="設定">
+        </form>
+        
+        <p>
+            <form action="/run" method="GET">
+                <button type="submit">起動</button>
+            </form>
+        </p>
+        
+
+    </div>
+    
+</body>
+
+</html>
